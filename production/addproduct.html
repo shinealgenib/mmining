@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mining</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!--Jasny Bootstrap -->
+  <link href="../jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+  <!--X-ditable   -->
+  <link href="../bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
+  <!-- Dropzone.js -->
+  <link href="../vendors/dropzone/dist/dropzone.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom2.css" rel="stylesheet">
+</head>
+
+<body class="nav-sm">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="editor.html" class="site_title"><p class="text-center"><i class="glyphicon glyphicon-edit"></i>EDITOR</p></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <ul class="nav side-menu">
+                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="video.html"><i class="fa fa-video-camera"></i>Video</a></li>
+                <li><a href="product.html"><i class="fa fa-tag"></i>Product</a></li>
+                <li><a><i class="fa fa-building-o"></i>Location<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="hotel.html">Hotel / Resort</a></li>
+                    <li><a href="restaurant.html">Restaurant / Bar</a></li>
+                    <li><a href="mall.html">Shop / Mall</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="club.html">Club</a></li>
+                    <li><a href="other.html">Other</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-calendar"></i> Event <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="chartjs.html">Concert</a></li>
+                    <li><a href="chartjs2.html">Sports</a></li>
+                    <li><a href="morisjs.html">Fairs/Festival</a></li>
+                    <li><a href="echarts.html">Sale</a></li>
+                    <li><a href="echarts.html">Networking</a></li>
+                    <li><a href="echarts.html">Other</a></li>
+                  </ul>
+                </li>
+                <li><a href="music.html"><i class="fa fa-music"></i>Music</a></li>
+                <li><a href="person.html"><i class="fa fa-users"></i>Person</a></li>
+                <li><a><i class="fa fa-line-chart"></i>Reports<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="chartjs.html">Reports</a></li>
+                    <li><a href="chartjs2.html">Dashboard</a></li>
+                    <li><a href="morisjs.html">Finance</a></li>
+                  </ul>
+                </li>
+                <li><a href="Payment.html"><i class="fa fa-money"></i>Payment</a></li>
+              </ul>
+            </div>
+            <div class="menu_section">
+              <h3>PPL</h3>
+              <ul class="nav side-menu">
+                <li><a href="product.html"><i class="fa fa-film"></i> Pre-Production <span class="label label-success pull-right">Coming Soon</span></a></li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav style="height:57px;">
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+            <ul class="nav navbar-nav navbar-left">
+              <li style="padding-top:14px;">
+                EDITOR
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="editor-save" style="margin-top: 12px;">
+                <button class="btn btn-default" type="button">Cancel</button>
+                <button class="btn btn-primary" type="button" style="font-size:15px;">Save</button>
+
+                <!-- Large modal -->
+
+              </li>
+
+            </ul>
+
+
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title" style="border:0; margin-bottom:0;">
+                    <h2>Product detail</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content" style="margin-top:0;">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Middle Name / Initial</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                        </div>
+                      </div>
+                      <div class="ln_solid"></div>
+                      <div class="x_title" style="border:0; margin-bottom:0;">
+                        <h2>Description</h2>
+
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="x_content" style="margin-top:0;">
+                        <div id="alerts"></div>
+                        <div class="btn-toolbar editor" data-role="editor-toolbar" data-target="#editor">
+                          <div class="btn-group">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="fa fa-font"></i><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            </ul>
+                          </div>
+
+                          <div class="btn-group">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a data-edit="fontSize 5">
+                                  <p style="font-size:17px">Huge</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a data-edit="fontSize 3">
+                                  <p style="font-size:14px">Normal</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a data-edit="fontSize 1">
+                                  <p style="font-size:11px">Small</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="btn-group">
+                            <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
+                            <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
+                            <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
+                            <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
+                          </div>
+
+                          <div class="btn-group">
+                            <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
+                            <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
+                            <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-dedent"></i></a>
+                            <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
+                          </div>
+
+                          <div class="btn-group">
+                            <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+                            <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
+                            <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+                            <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
+                          </div>
+
+                          <div class="btn-group">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
+                            <div class="dropdown-menu input-append">
+                              <input class="span2" placeholder="URL" type="text" data-edit="createLink" />
+                              <button class="btn" type="button">Add</button>
+                            </div>
+                            <a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-cut"></i></a>
+                          </div>
+
+                          <div class="btn-group">
+                            <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="fa fa-picture-o"></i></a>
+                            <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+                          </div>
+
+                          <div class="btn-group">
+                            <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
+                            <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
+                          </div>
+                        </div>
+
+                        <div id="editor" class="editor-wrapper"></div>
+
+                        <textarea name="descr" id="descr" style="display:none;"></textarea>
+
+
+                      </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="form-group">
+                      <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                        <button type="submit" class="btn btn-primary">Cancel</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+  <!-- validator -->
+  <script src="../vendors/validator/validator.js"></script>
+  <!-- Jasny -->
+  <script src="../jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+  <!-- X-editable -->
+  <script src="../bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+  <!-- Dropzone.js -->
+  <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+  <script>
+  // initialize the validator function
+  validator.message.date = 'not a real date';
+
+  // validate a field on "blur" event, a 'select' on 'change' event & a '.reuired' classed multifield on 'keyup':
+  $('form')
+  .on('blur', 'input[required], input.optional, select.required', validator.checkField)
+  .on('change', 'select.required', validator.checkField)
+  .on('keypress', 'input[required][pattern]', validator.keypress);
+
+  $('.multi.required').on('keyup blur', 'input', function() {
+    validator.checkField.apply($(this).siblings().last()[0]);
+  });
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+    var submit = true;
+
+    // evaluate the form using generic validaing
+    if (!validator.checkAll($(this))) {
+      submit = false;
+    }
+
+    if (submit)
+    this.submit();
+
+    return false;
+  });
+  </script>
+  <!-- /validator -->
+
+
+</body>
+</html>
