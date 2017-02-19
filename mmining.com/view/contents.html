@@ -1,0 +1,108 @@
+<div class="contents" ng-controller="contentsCtrl"><!-- contents -->
+
+  <!-- Page Content 전체 프로그램-->
+  <div class="container all-program">
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-xs-12 video-group">
+        <h2>전체 프로그램</h2>
+      </div>
+    </div>
+    <!-- Heading -->
+    <!-- Projects Row -->
+    <section class="programrow slider">
+      <div class="program-info" ng-repeat="item in totalPrograms">
+        <a href="{{item.href}}">
+          <img ng-src="{{item.img}}">
+          <h5 class="program-title">{{item.title}}</h5>
+        </a>
+      </div>
+    </section>
+    <!-- Projects row -->
+  </div>
+  <!-- Page Content 전체 프로그램-->
+
+
+  <!-- Page Content 인기 영상-->
+  <div class="container popular">
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-xs-12 video-group">
+        <h2>인기 있어요</h2>
+      </div>
+    </div>
+    <!-- Heading -->
+    <!-- Projects Row -->
+    <section class="threerow slider">
+      <div class="thumb-info" ng-repeat="item in popularPrograms">
+        <a href={{item.href}}>
+          <img ng-src="{{item.img}}">
+          <div class="overlay">
+            <h2>{{item.overlay}}</h2>
+            <p>
+            </p>
+          </div>
+          <h5 class="thumb-title">{{item.title}}</h5>
+        </a>
+        <p>{{item.meta}}</p>
+      </div>
+    </section>
+    <!-- Projects row -->
+  </div>
+  <!-- Page Content 인기 영상-->
+
+  <!-- Page Content 신규 영상 -->
+  <div class="container recent">
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-sm-12 video-group">
+        <h2>신규 영상</h2>
+      </div>
+    </div>
+    <!-- Heading -->
+    <!-- Projects Row -->
+    <section class="tworow slider">
+      <div class="thumb-info" ng-repeat="item in recentPrograms">
+        <a href={{item.href}}>
+          <img ng-src="{{item.img}}">
+          <div class="overlay">
+            <h2>{{item.overlay}}</h2>
+            <p>
+            </p>
+          </div>
+          <h5 class="thumb-title">{{item.title}}</h5>
+        </a>
+        <p>{{item.meta}}</p>
+      </div>
+    </section>
+  </div>
+  <!-- Page Content 신규 영상 -->
+
+  <!-- Page Content 추천 영상 -->
+  <div class="container recommend">
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-sm-12 video-group">
+        <h2>추천 영상</h2>
+      </div>
+    </div>
+    <!-- Heading -->
+    <!-- Projects Row -->
+    <section class="onerow slider">
+      <div class="thumb-info" ng-repeat="item in recommendPrograms">
+        <a href={{item.href}}>
+          <img ng-src="{{item.img}}">
+          <div class="overlay">
+            <h2>{{item.overlay}}</h2>
+            <p>
+            </p>
+          </div>
+          <h5 class="thumb-title">{{item.title}}</h5>
+        </a>
+        <p>{{item.meta}}</p>
+      </div>
+    </section>
+  </div>
+  <!-- Page Content 추천 영상 -->
+
+</div><!-- contents -->

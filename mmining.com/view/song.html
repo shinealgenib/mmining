@@ -1,0 +1,29 @@
+<div class="contents" ng-controller="songCtrl"><!-- contents -->
+
+  <!-- Page Content 전체 프로그램-->
+  <div class="container all-program">
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-xs-12 video-group">
+        <h2>전체 프로그램</h2>
+      </div>
+    </div>
+    <!-- Heading -->
+    <!-- Projects Row -->
+    <section class="programrow slider">
+      <div class="program-info" ng-repeat="item in totalPrograms">
+        <a href="{{item.href}}">
+          <img ng-src="{{item.img}}">
+          <h5 class="program-title">{{item.title}}</h5>
+        </a>
+      </div>
+    </section>
+    <!-- Projects row -->
+  </div>
+  <!-- Page Content 전체 프로그램-->
+
+</div><!-- contents -->
+
+<script type="text/javascript">
+  init_slick_timeout();
+</script>

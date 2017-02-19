@@ -1,0 +1,60 @@
+<div class="contents" ng-controller="searchCtrl"><!-- contents -->
+
+  <!-- All header -->
+  <div class="container-fluid all">
+    <div class="container">
+      <div class="all-header">
+        <p class="text-uppercase">Search result for '{{searchText}}'</p>
+      </div>
+    </div>
+  </div>
+  <!-- All header -->
+
+  <!-- All program list -->
+  <div class="container">
+    <div class="all-body">
+
+      <div class="row">
+        <div class="col-sm-12"><h3>영상</h3></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="item in resultProgram">
+          <div class="hovereffect">
+            <a href="">
+            <img class="img-responsive" src="{{item.img}}" alt="">
+            <div class="overlay">
+              <h2>{{item.overlay}}</h2>
+            </div>
+            <h5 class="thumb-title">{{item.title}}</h5>
+          </a>
+          <p>{{item.meta}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row result">
+        <a href=""><p>View all &gt;</p></a>
+      </div>
+
+      <hr style="border-bottom: 1px solid #fff;">
+      <div class="row">
+        <div class="col-sm-12"><h3>아이템</h3></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="item in resultItem">
+          <div class="hovereffect">
+            <a href="">
+            <img class="img-responsive" src="{{item.img}}" alt="">
+            <div class="overlay">
+              <h2>{{item.overlay}}</h2>
+            </div>
+            <h5 class="thumb-title">{{item.title}}</h5>
+          </a>
+          <p>{{item.meta}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row result">
+        <a href=""><p>View all &gt;</p></a>
+      </div>
+
+    </div>
+  </div>
+  <!-- All program list -->
+
+</div><!-- contents -->

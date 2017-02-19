@@ -1,0 +1,94 @@
+  <!-- All header -->
+  <div class="container-fluid video">
+    <div class="video-container">
+      <video controls>
+        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="video-info">
+          <div class="vidinfo">
+            <h3>tvN</h3>
+            <p>치즈인더트랩 - 3회</p>
+            <p>View: <span>3234</span> | <span>Published: 2016-2-5</span></p>
+            <div class="btn-group btn-group-xs">
+              <button type="button" class="btn btn-danger">Subscribe</button>
+              <button type="button" class="btn btn-default" style="pointer-events: n;">114</button>
+            </div>
+            <div class="video-desc">
+              <p data-toggle="collapse" data-target="#demo"><span class="glyphicon glyphicon-collapse-down" area-hidden="true"></span>details</p>
+              <div id="demo" class="collapse">
+                <hr>
+                <div>
+                  <p>유정이 자신에게 실망한 이유를 알 수 없어 혼란스럽기만 한 설. 마치 예전으로 돌아간 듯 차갑기만 한 유정의 모습에 설은 어찌할 바를 모른다. 여기에 유정과 설의 관계를 알게 된 인호는 노골적으로 설에게 접근하며 유정의 신경을 건드리고, 한편 비협조적인 조원들로 인해 설은 ‘멘붕’에 빠지는데..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- All header -->
+
+<div class="contents" ng-controller="videoInfoCtrl"><!-- contents -->
+
+    <!-- video info -->
+    <div class="video-container">
+      <div class="row">
+        <div class="col-sm-12 video-group">
+          <a href="#"><h2>Episodes  &gt;</h2></a>
+        </div>
+      </div>
+      <!-- Projects Row -->
+      <section class="onerow slider">
+        <div class="thumb-info" ng-repeat="item in episodes">
+          <a href={{item.href}}>
+            <img src="/src/img/{{item.img}}">
+            <div class="overlay">
+              <h2>{{item.overlay}}</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">{{item.title}}</h5>
+          </a>
+          <p>{{item.meta}}</p>
+        </div>
+      </section>
+    </div>
+    <!-- video info -->
+
+    <hr>
+
+    <!-- product info -->
+    <div class="video-container related-product">
+      <!-- Heading -->
+      <div class="row">
+        <div class="col-sm-12 video-group">
+          <a href="#"><h2>Related Information  &gt;</h2></a>
+        </div>
+      </div>
+      <!-- Projects Row -->
+      <section class="tworow slider">
+        <div class="hovereffect" ng-repeat="item in relatedProducts">
+          <a href={{item.href}}>
+          <img class="img-responsive" src="/src/img/{{item.img}}" alt="">
+          <div class="overlay">
+            <h2>{{item.overlay}}</h2>
+          </div>
+          <h5 class="thumb-title">{{item.title}}</h5>
+        </a>
+        <p>{{item.meta}}</p>
+        </div>
+      </section>
+    </div>
+    <!-- product info -->
+
+</div><!-- contents -->
+
+<script type="text/javascript">
+$(document).on('ready', function() {
+  init_slick_onerow();
+  init_slick_tworow();
+});
+</script>
