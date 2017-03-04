@@ -44,6 +44,26 @@ app.config(['$locationProvider', '$stateProvider', function ($locationProvider, 
         }
     })
 
+    .state('program', {
+        url: '/program/',
+        views: {
+            'nav': {
+                templateUrl: '/view/nav.html'
+            },
+            'carousel': {
+                templateUrl: '/view/carousel.html'
+            },
+            'contents': {
+                templateUrl: '/view/program.html',
+                controller: function($scope){
+                }
+            },
+            'footer': {
+                templateUrl: '/view/footer.html'
+            },
+        }
+    })
+
     .state('tv', {
         url: '/tv/',
         views: {
@@ -153,26 +173,26 @@ app.factory('searchFactory', function() {
 
 app.controller('contentsCtrl', ['$scope', function ($scope) {
   $scope.totalPrograms = [
-    {name:"1", img:IMG_PATH+"photo.jpg", title:"무한도전 무엇을얘기해볼까", href:"#/video/"},
-    {name:"2", img:IMG_PATH+"photo2.jpg", title:"무한도전", href:"#/video/"},
-    {name:"3", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/video/"},
-    {name:"4", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/video/"},
-    {name:"5", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/video/"},
-    {name:"6", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
-    {name:"7", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
-    {name:"8", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
-    {name:"9", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
-    {name:"10", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/video/"},
-    {name:"11", img:IMG_PATH+"photo.jpg", title:"d1", href:"#/video/"},
-    {name:"12", img:IMG_PATH+"photo2.jpg", title:"d2", href:"#/video/"},
-    {name:"13", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/video/"},
-    {name:"14", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/video/"},
-    {name:"15", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
-    {name:"16", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
-    {name:"17", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
-    {name:"18", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
-    {name:"19", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/video/"},
-    {name:"20", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/video/"},
+    {name:"1", img:IMG_PATH+"photo.jpg", title:"무한도전 무엇을얘기해볼까", href:"#/program/"},
+    {name:"2", img:IMG_PATH+"photo2.jpg", title:"무한도전", href:"#/program/"},
+    {name:"3", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/program/"},
+    {name:"4", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/program/"},
+    {name:"5", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/program/"},
+    {name:"6", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
+    {name:"7", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
+    {name:"8", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
+    {name:"9", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
+    {name:"10", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/program/"},
+    {name:"11", img:IMG_PATH+"photo.jpg", title:"d1", href:"#/program/"},
+    {name:"12", img:IMG_PATH+"photo2.jpg", title:"d2", href:"#/program/"},
+    {name:"13", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/program/"},
+    {name:"14", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/program/"},
+    {name:"15", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
+    {name:"16", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
+    {name:"17", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
+    {name:"18", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
+    {name:"19", img:IMG_PATH+"photo3.jpg", title:"d2", href:"#/program/"},
+    {name:"20", img:IMG_PATH+"photo.jpg", title:"d2", href:"#/program/"},
   ]
 
   $scope.popularPrograms = [
@@ -235,6 +255,55 @@ app.controller('contentsCtrl', ['$scope', function ($scope) {
   ]
 
 }]);
+
+app.controller('programCtrl', ['$scope', function ($scope) {
+    $scope.episodesPrograms = [
+    {name:"1", img:IMG_PATH+"r1.png", title:"미씽나인", href:"#/video/", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"2", img:IMG_PATH+"r2.png", title:"인거같다", href:"#/video/", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"3", img:IMG_PATH+"r3.png", title:"d1", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"4", img:IMG_PATH+"r4.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"5", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"6", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"7", img:IMG_PATH+"r2.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"8", img:IMG_PATH+"r1.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"9", img:IMG_PATH+"r1.png", title:"d3", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"10", img:IMG_PATH+"r4.png", title:"ㅁㄴㅇㄹ", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"11", img:IMG_PATH+"r1.png", title:"미씽나인", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"12", img:IMG_PATH+"r2.png", title:"인거같다", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"13", img:IMG_PATH+"r3.png", title:"d1", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"14", img:IMG_PATH+"r4.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"15", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"16", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"17", img:IMG_PATH+"r2.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"18", img:IMG_PATH+"r1.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"19", img:IMG_PATH+"r1.png", title:"d3", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"20", img:IMG_PATH+"r4.png", title:"ㅁㄴㅇㄹ", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+  ]
+
+  $scope.itemInThisPrograms = [
+    {name:"1", img:IMG_PATH+"r1.png", title:"미씽나인", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"2", img:IMG_PATH+"r2.png", title:"인거같다", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"3", img:IMG_PATH+"r3.png", title:"d1", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"4", img:IMG_PATH+"r4.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"5", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"6", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"7", img:IMG_PATH+"r2.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"8", img:IMG_PATH+"r1.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"9", img:IMG_PATH+"r1.png", title:"d3", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"10", img:IMG_PATH+"r4.png", title:"ㅁㄴㅇㄹ", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"11", img:IMG_PATH+"r1.png", title:"미씽나인", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"12", img:IMG_PATH+"r2.png", title:"인거같다", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"13", img:IMG_PATH+"r3.png", title:"d1", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"14", img:IMG_PATH+"r4.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"15", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"16", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"17", img:IMG_PATH+"r2.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"18", img:IMG_PATH+"r1.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"19", img:IMG_PATH+"r1.png", title:"d3", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"20", img:IMG_PATH+"r4.png", title:"ㅁㄴㅇㄹ", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+  ]
+}]);
+
 
 app.controller('tvCtrl', ['$scope', function ($scope) {
     $scope.popularPrograms = [
@@ -325,49 +394,49 @@ app.controller('songCtrl', ['$scope', function ($scope) {
 
 app.controller('videoInfoCtrl', ['$scope', function ($scope) {
   $scope.episodes = [
-    {name:"1", img:"r1.png", title:"미씽나인", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"2", img:"r2.png", title:"인거같다", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"3", img:"r3.png", title:"d1", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"4", img:"r4.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"5", img:"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"6", img:"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"7", img:"r2.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"8", img:"r1.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"9", img:"r1.png", title:"d3", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"10", img:"r4.png", title:"ㅁㄴㅇㄹ", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"11", img:"r1.png", title:"미씽나인", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"12", img:"r2.png", title:"인거같다", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"13", img:"r3.png", title:"d1", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"14", img:"r4.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"15", img:"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"16", img:"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"17", img:"r2.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"18", img:"r1.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"19", img:"r1.png", title:"d3", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
-    {name:"20", img:"r4.png", title:"ㅁㄴㅇㄹ", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"1", img:IMG_PATH+"r1.png", title:"미씽나인", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"2", img:IMG_PATH+"r2.png", title:"인거같다", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"3", img:IMG_PATH+"r3.png", title:"d1", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"4", img:IMG_PATH+"r4.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"5", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"6", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"7", img:IMG_PATH+"r2.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"8", img:IMG_PATH+"r1.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"9", img:IMG_PATH+"r1.png", title:"d3", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"10", img:IMG_PATH+"r4.png", title:"ㅁㄴㅇㄹ", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"11", img:IMG_PATH+"r1.png", title:"미씽나인", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"12", img:IMG_PATH+"r2.png", title:"인거같다", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"13", img:IMG_PATH+"r3.png", title:"d1", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"14", img:IMG_PATH+"r4.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"15", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"16", img:IMG_PATH+"r3.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"17", img:IMG_PATH+"r2.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"18", img:IMG_PATH+"r1.png", title:"d2", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"19", img:IMG_PATH+"r1.png", title:"d3", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
+    {name:"20", img:IMG_PATH+"r4.png", title:"ㅁㄴㅇㄹ", href:"", overlay:"", meta:">MBC | 44min | 2017년 1월 28일"},
   ]
 
   $scope.relatedProducts = [
-    {name:"1", img:"product1.jpg", title:"MSI 지포스 ", href:"#/item/", overlay:"", meta:"MSI | Product | $251"},
-    {name:"2", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"#/item/", overlay:"", meta:"MSI | Product | $251"},
-    {name:"3", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"4", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"5", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"6", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"7", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"8", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"9", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"10", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"11", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"12", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"13", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"14", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"15", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"16", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"17", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"18", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"19", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
-    {name:"20", img:"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"1", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 ", href:"#/item/", overlay:"", meta:"MSI | Product | $251"},
+    {name:"2", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"#/item/", overlay:"", meta:"MSI | Product | $251"},
+    {name:"3", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"4", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"5", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"6", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"7", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"8", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"9", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"10", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"11", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"12", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"13", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"14", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"15", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"16", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"17", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"18", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"19", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
+    {name:"20", img:IMG_PATH+"product1.jpg", title:"MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6", href:"", overlay:"", meta:"MSI | Product | $251"},
 
   ]
 

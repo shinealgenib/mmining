@@ -1,0 +1,278 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.navbar-inverse {
+
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 0px;
+}
+
+
+/* Dropdown Button */
+.dropdown {
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.navbar-nav {
+    position: relative;
+    display: inline-block;
+}
+.navbar-bottom {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/*
+.container {
+  margin: 0 auto;
+  width: 960px;
+}*/
+
+.vidcontainer {
+  height: 580px;
+  width: 960px;
+  position: relative;
+}
+.vidcontainer video{
+  height: 540px;
+  width: 960x;
+}
+.inner {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.vidlayer{
+  position: absolute;
+  z-index:1;
+  color: #000;
+  opacity: .6;
+  width: 960px;
+  height: 540px;
+  margin-top: 10px;
+  display:none;
+  overflow: auto;
+  pointer-events: none;
+}
+
+.recommendVideo {
+  display: inline-block;
+  vertical-align: top;
+  height: 560px;
+  width: 960px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.vidinfo {
+  height: 170px;
+  width: 960px;
+
+  margin: 8px auto 0 auto;
+  display: block;
+}
+
+.vidinfo h3 {
+  font-family: 'Righteous', cursive;
+  font-size: 35px;
+  margin: 0;
+  color: #e5e5e5;
+}
+.vidinfo p {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #e5e5e5;
+  margin-bottom: 3px;
+}
+.vidinfo > .btn-group {
+  margin-top: 4px;
+}
+.recommendVideo {
+  height: 160px;
+  width: 960px;
+
+  margin: 8px auto 0 auto;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+
+}
+.recommendVideo > .recVideo {
+  display: inline-block;
+  margin-top: 10px;
+  border: 1px solid #333;
+  background-color: #333;
+}
+.recVideo p{
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #e5e5e5;
+  margin-top: 5px;
+}
+
+
+.recommendVideo img {
+  height: 110px;
+  width: auto;
+}
+
+.ad {
+  width: 1024px;
+  height: auto;
+  margin: 10px auto 0 auto;
+}
+.ad h2 {
+  color: #e5e5e5;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+}
+
+.nav-tabs {
+  margin-bottom: 10px;
+}
+
+.allitem img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+/*jquery slider css*/
+.grid-block {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+
+.caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #222;
+	width: 100%;
+	height: 100%;
+  opacity: 0.8;
+}
+.caption h3, .caption p {
+	color: #fff;
+	margin: 20px;
+}
+.caption h3 {
+	margin: 20px 20px 10px;
+}
+.caption p {
+	font-size: .75em;
+	line-height: 1.5em;
+	margin: 0 20px 15px;
+}
+.caption a.learn-more {
+	padding: 5px 10px;
+	background: #08c;
+	color: #fff;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.caption a.learn-more:hover {
+	background: #fff;
+	color: #08c;
+}
+
+.video_overlay {
+  position: absolute;
+  top:30px;
+  height: 540px;
+  width: 960px;
+}
+.video_overlay_panel{
+  opacity:0.0;
+}
+.video_overlay_panel.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color:#000;
+}
+.video_overlay_panel.background.over {opacity:0.5;}
+.video_overlay_panel.background.out {opacity:0.0;}
+.video_overlay_panel.top {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    padding-top:10px;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,.8) 45%, rgba(0,0,0,.0) 50%);
+}
+.video_overlay_panel.top .video_title{
+  color:#e3e3e3;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.video_overlay_panel.top.over {opacity:0.8;}
+.video_overlay_panel.top.out {opacity:0.0;}
+
+.video_overlay_panel.center{
+  text-align:center;
+  height:100%;
+}
+.video_overlay_panel.center.over {opacity:0.6;}
+.video_overlay_panel.center.out {opacity:0.0;}
+.video_overlay_panel.center .play{
+  top: 50%;
+  position: absolute;
+  width: 150px;
+  transform: translateX(-50%) translateY(-50%);
+  cursor:pointer;
+}
+.video_overlay_panel.right {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    padding:20px;
+}
+.video_overlay_panel.right.over {opacity:0.8;}
+.video_overlay_panel.right.out {opacity:0.0;}
+.video_overlay_panel.right .video_button{
+  width:100px;
+  float:right;
+  margin-bottom:10px;
+  cursor:pointer;
+}

@@ -1,0 +1,92 @@
+<div class="contents" ng-controller="programCtrl"><!-- contents -->
+  <!-- Page Content -->
+  <div class="container-fluid program-desc">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-1 col-xs-4 desc-left">
+          <p>최근 영상</p>
+          <div class="hovereffect">
+            <a href="">
+            <img class="img-responsive" src="/src/img/r2.png" alt="">
+            <div class="overlay">
+              <h2>PLAY</h2>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+          </div>
+        </div>
+        <div class="col-sm-7 col-xs-8 desc-right">
+          <hr>
+          <strong>Program title:</strong><span> Program description...</span>
+          <p>Animation and Cartoons | English</p>
+        </div>
+      </div>
+    </div>
+    <!-- Page Heading -->
+
+  </div>
+  <!-- Page Heading -->
+
+  <div class="container ">
+    <div class="row">
+      <div class="col-sm-12 video-group">
+        <h2><a href="#">Episodes <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></h2>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Projects Row -->
+    <section class="onerow slider">
+      <div class="thumb-info" ng-repeat="item in episodesPrograms">
+        <a href={{item.href}}>
+          <img ng-src="{{item.img}}">
+          <div class="overlay">
+            <h2>{{item.overlay}}</h2>
+            <p>
+            </p>
+          </div>
+          <h5 class="thumb-title">{{item.title}}</h5>
+        </a>
+        <p>{{item.meta}}</p>
+      </div>
+    </section>
+    <!-- /.row -->
+  </div>
+  <!-- Heading -->
+
+  <!-- Page Content -->
+  <div class="container related-product">
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-sm-12 video-group">
+        <h2><a href="#">Items in this program <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></h2>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Projects Row -->
+    <section class="tworow slider">
+      <div class="thumb-info" ng-repeat="item in itemInThisPrograms">
+        <a href={{item.href}}>
+          <img ng-src="{{item.img}}">
+          <div class="overlay">
+            <h2>{{item.overlay}}</h2>
+            <p>
+            </p>
+          </div>
+          <h5 class="thumb-title">{{item.title}}</h5>
+        </a>
+        <p>{{item.meta}}</p>
+      </div>
+    </section>
+    <!-- /.row -->
+
+    <!-- /.container -->
+  </div>
+
+</div><!-- contents -->
+
+<script type="text/javascript">
+  init_slick_timeout();
+</script>
