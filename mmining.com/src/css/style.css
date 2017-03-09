@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-  .desc-left>p {
+  .desc-left>p {7
     font-size: 12px;
   }
 }
@@ -77,7 +77,7 @@ body {
 }
 
 .container-fluid img {
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 
 .program-image {
@@ -191,7 +191,7 @@ video {
 }
 .video {
   background-color: #3b3b3b;
-  padding-top: 70px;
+  padding-top: 30px;
   margin:0;
 }
 

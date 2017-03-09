@@ -5,20 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Best kids video site</title>
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
   <!-- Bootstrap Core CSS -->
   <link href="src/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Owl carousel -->
-  <link rel="stylesheet" href="src/css/owl.carousel.css">
-  <link rel="stylesheet" href="src/css/owl.theme.default.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="src/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="src/slick/slick-theme.css">
   <!-- Custom CSS -->
   <link href="src/css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="opacity: 1;">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -31,41 +32,23 @@
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">드라마</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">최근 영상</a></li>
-              <li><a href="#">인기 프로그램</a></li>
-              <li><a href="#">방송사별</a></li>
-              <li><a href="#">웹드라마</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">예능</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">최근 영상</a></li>
-              <li><a href="#">인기 프로그램</a></li>
-              <li><a href="#">방송사별</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">패션/뷰티</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">최근 영상</a></li>
-              <li><a href="#">인기 프로그램</a></li>
-              <li><a href="#">방송사별</a></li>
-            </ul>
-          </li>
+          <li><a href="#">TV동영상</a></li>
+          <li><a href="#">동요</a></li>
+          <li><a href="#">Kidz</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="http://www.mbc.com">Login</a>
-          </li>
-        </ul>
+        <form class="navbar-form navbar-right">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" style="width: 200px;">
+          <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+        </div>
+      </form>
       </div>
     </div>
   </nav>
   <!-- Navigation -->
+
 
 
   <!-- All header -->
@@ -110,145 +93,155 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-12 columns">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div>
-                <h5>sample</h5>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
+      <!-- Projects Row -->
+      <section class="onerow slider">
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
             </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div>
-                <p>sadsfadsf</p>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div>
-                <h3>sample</h3>
-              </div>
-              <div class="image">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
         </div>
-      </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+        <div class="thumb-info">
+          <a href="">
+            <img src="src/img/r1.png">
+            <div class="overlay">
+              <h2>play</h2>
+              <p>
+              </p>
+            </div>
+            <h5 class="thumb-title">무한도전 asdfasdfadsfadsfasdfas</h5>
+          </a>
+          <p>MBC <span>| 44min | 2017년 1월 28일</span></p>
+        </div>
+
+      </section>
+
     </div>
     <!-- video info -->
 
@@ -263,180 +256,137 @@
       <!--  -->
 
       <!-- Projects Row -->
-      <div class="row">
-        <div class="col-lg-12 columns">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="item-upper">
-                <div style="position: absolute; z-index:3; color: white;">
-                  <h3>sample</h3>
-                </div>
-                <div class="image">
-                  <a href="#">
-                    <img class="img-responsive" src="src/img/r1.png" alt="">
-                  </a>
-                </div>
-
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r2.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r2.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r3.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r4.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r3.png" alt="">
-                </a>
-                <h1 style="position: absolute;">test</h1>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r4.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-upper">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-              <div class="item-lower">
-                <a href="#">
-                  <img class="img-responsive" src="src/img/r1.png" alt="">
-                </a>
-              </div>
-            </div>
+      <!-- Projects Row -->
+      <section class="tworow slider">
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
           </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
         </div>
-      </div>
-      <!-- /.row -->
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+        <div class="hovereffect">
+          <a href="">
+          <img class="img-responsive" src="src/img/product1.jpg" alt="">
+          <div class="overlay">
+            <h2>detail</h2>
+          </div>
+          <h5 class="thumb-title">MSI 지포스 GTX1060 게이밍 X D5 6GB 트윈프로져6</h5>
+        </a>
+        <p>MSI <span>| Product | $251</span></p>
+        </div>
+
+
+      </section>
+
     </div>
 
 
 
+    <!-- Footer -->
     <footer>
       <div class="container">
         <ul class="list-inline">
@@ -455,40 +405,76 @@
   <script src="src/js/jquery.js"></script>
   <!-- Bootstrap Core JavaScript -->
   <script src="src/js/bootstrap.min.js"></script>
-  <!-- Owl Carousel -->
-  <script src="src/js/owl.carousel.js"></script>
-  <script>
-  $(document).ready(function() {
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      margin: 10,
-      mouseDrag: true,
-      dots: false,
-      nav: true,
-      navText: [ '<', '>' ],
-      loop: true,
-      slideBy: 'page',
-      responsive: {
-        0: {
-          items: 1
+  <!-- Slick -->
+  <script src="src/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  $(document).on('ready', function() {
+    $(".tworow").slick({
+      dots: true,
+      infinite: true,
+      rows: 2,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true
+          }
         },
-        768: {
-          items: 3
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
         },
-        1200: {
-          items: 4
+        {
+          breakpoint: 480,
+          settings: "unslick"
         }
-      }
-    })
-
-    $(".owl-stage-outer").css("width", "94%");
-    $(".owl-stage-outer").css("margin-left", "3%");
-
-    $.each($(".owl-nav"), function(key, val){
-      h = $(val).parent().height();
-      $(val).css("margin-top", ((h+40)/2)*(-1));
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
-  })
+    $(".onerow").slick({
+      dots: true,
+      infinite: true,
+      rows: 1,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: "unslick"
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
+  });
   </script>
 </body>
 

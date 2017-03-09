@@ -1,10 +1,57 @@
-  <!-- All header -->
+
   <div class="container-fluid video">
     <div class="video-container">
-      <video controls>
+
+        <div class="container">
+          <div class="vidcontainer">
+            <div id="box1" class="inner">
+              <img src="/src/img/box.png" alt="">
+            </div>
+            <div class="vidlayer"></div>
+
+      	     <div class="video indexing-area ui-widget-header" id="droppable">
+               <video id="video" poster="/src/img/ep3.png">
+                 <source src="/mov/new.mp4"></source>
+               </video>
+    	       </div>
+            <div class="video_overlay" id="video_ovelray">
+                <div class="video_overlay_panel background" id="video_overlay_background">
+                </div>
+                <div class="video_overlay_panel top">
+                  <a class="video_title">Title - 타이틀이다</a>
+                </div>
+                <div class="video_overlay_panel center">
+                    <img id="video_overlay_play_pause" class="play" src="/src/img/play.png" alt="">
+                </div>
+                <div class="video_overlay_panel right">
+                  <img class="video_button item" src="/src/img/item.png" alt="">
+                  <img class="video_button music" src="/src/img/music.png" alt="">
+                  <img class="video_button location" src="/src/img/location.png" alt="">
+                </div>
+            </div>
+          </div>
+
+            <div id="controls" style="position:relative">
+              <button id="play-pause">Play</button>
+              <button id="stop" disabled>Stop</button>
+              <button id="pause" disabled>Pause</button>
+              <button id="plus" title="Volume" disabled>Up</button>
+              <button id="minus" title="Volume" disabled>Down</button>
+              <button id="mute" disabled>Mute</button>
+              <button id="backward"><</button>
+              <button id="forward">></button>
+            </div>
+            <div id="progressbar">
+              <div id="loadingprogress"></div>
+              <div id="butterfly"></div>
+            </div>
+
+        </div>
+
+      <!--video controls>
         <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>
+        </video-->
 
         <div class="video-info">
           <div class="vidinfo">
@@ -44,7 +91,7 @@
       <section class="onerow slider">
         <div class="thumb-info" ng-repeat="item in episodes">
           <a href={{item.href}}>
-            <img src="/src/img/{{item.img}}">
+            <img ng-src="{{item.img}}">
             <div class="overlay">
               <h2>{{item.overlay}}</h2>
               <p>
@@ -72,7 +119,7 @@
       <section class="tworow slider">
         <div class="hovereffect" ng-repeat="item in relatedProducts">
           <a href={{item.href}}>
-          <img class="img-responsive" src="/src/img/{{item.img}}" alt="">
+          <img class="img-responsive" ng-src="{{item.img}}" alt="">
           <div class="overlay">
             <h2>{{item.overlay}}</h2>
           </div>
@@ -88,7 +135,9 @@
 
 <script type="text/javascript">
 $(document).on('ready', function() {
-  init_slick_onerow();
-  init_slick_tworow();
+  //init_slick_onerow();
+  //init_slick_tworow();
+  //init_slick_timeout();
+  init_new_video();
 });
 </script>
